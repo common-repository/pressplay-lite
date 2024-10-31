@@ -1,0 +1,44 @@
+@import url('//code.ionicframework.com/ionicons/1.4.1/css/ionicons.min.css');
+
+a.sm2_button .btn-pressplay {
+	position: relative;
+	display: inline-table;
+	font-family: "Ionicons";
+	font-size: 125%;
+	speak: none;
+	font-style: normal;
+	font-weight: bold;
+	font-variant: normal;
+	text-transform: none;
+	text-rendering: auto;
+	line-height: 0;
+	-webkit-font-smoothing: antialiased;
+	vertical-align: middle;
+	margin-right: 1%;
+	margin-top: -0.2%;
+}
+a.sm2_button .btn-pressplay:before  {
+	content: "\f1c8";
+	line-height: normal;
+	text-align: center;
+	padding: 10%;
+	margin: 0 -30% 0 0;
+}
+a.sm2_button:hover .btn-pressplay:before,
+a.sm2_button.sm2_playing .btn-pressplay:before {
+	content: "\f1c7";
+}
+a.sm2_button.sm2_playing:hover .btn-pressplay:before {
+	content: "\f1be";
+	padding: 9.7%;
+	margin: 0 -25% 0 0;
+}
+a.sm2_button.sm2_paused .btn-pressplay:before {
+	content: "\f1bd";
+	padding: 9.7%;
+	margin: 0 -25% 0 0;
+
+}
+a.sm2_button.sm2_paused:hover .btn-pressplay:before {
+	content: "\f1c8";
+}
